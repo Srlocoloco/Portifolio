@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Kayke Spoti - Desenvolvedor Full Stack">
+    <title>Kayke Spoti | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="faviconportifolio.png">
+    <script src="matrix.js"></script>
+    <script src="main.js"></script>
+    <!-- Meta tags -->
+    <meta name="keywords" content="desenvolvedor, programação, portfólio, web, frontend, backend, Kayke Spoti">
+    <meta name="author" content="Kayke Spoti">
+    <meta property="og:title" content="Kayke Spoti | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfólio profissional de Kayke Spoti - Desenvolvedor Full Stack">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaykespoti.com">
+    <!-- Preload de recursos críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    
+
+    <!-- Header & Navegação -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">
+                    <span class="code-bracket">&lt;</span>
+                    <span class="logo-text">Kayke<span class="highlight">Spoti</span></span>
+                    <span class="code-bracket">/&gt;</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#sobre" class="nav-link"><span class="nav-number"></span> Sobre</a></li>
+                    <li><a href="#habilidades" class="nav-link"><span class="nav-number"></span> Habilidades</a></li>
+                    <li><a href="#experiencia" class="nav-link"><span class="nav-number"></span> Experiência</a></li>
+                    <li><a href="#projetos" class="nav-link"><span class="nav-number"></span> Projetos</a></li>
+                    <li><a href="#contato" class="nav-link"><span class="nav-number"></span> Contato</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas class="matrix-rain" id="matrix-canvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="code-comment">// Bem-vindo ao meu portfólio</div>
+                    <h1 class="hero-title">
+                        <span class="greeting">Olá, mundo! Eu sou</span>
+                        <span class="name highlight">Kayke Spoti</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        <span class="code-line">Transformo <span class="code-string">"ideias"</span> em <span class="code-function">aplicações()</span> de alta performance</span>
+                        <span class="code-line">com foco em <span class="code-keyword">usabilidade</span> e <span class="code-keyword">design</span>.</span>
+                    </p>
+                    <div class="tech-stack">
+                        <div class="tech-icon" title="JavaScript"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon" title="React"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon" title="Node.js"><i class="fab fa-node-js"></i></div>
+                        <div class="tech-icon" title="HTML5"><i class="fab fa-html5"></i></div>
+                        <div class="tech-icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
+                        <div class="tech-icon" title="Java"><i class="fab fa-java"></i></div>
+                        <div class="tech-icon" title="Spring Boot"><svg class="spring-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 5.41a10.11 10.11 0 0 0-1.3-1.3l.71.71a9.29 9.29 0 0 0-13.18.23 9.2 9.2 0 0 0-2.73 6.24 9 9 0 0 0 1.37 5 .14.14 0 0 1 0 .17.15.15 0 0 1-.17 0 9.44 9.44 0 0 1-3.65-8.39A10.46 10.46 0 0 1 4.9 1.33a10.73 10.73 0 0 1 14.7 0l.71.71.28-.29zM5.54 11.5c0-.24.09-.48.14-.72a4.8 4.8 0 0 1 .1-.53c0-.07 0-.14.05-.2l.06-.21a6.92 6.92 0 0 1 .36-.9 5.79 5.79 0 0 1 .53-.94 5.52 5.52 0 0 1 .77-.9 5.59 5.59 0 0 1 .89-.77 5.76 5.76 0 0 1 .94-.53 6.92 6.92 0 0 1 .9-.36c.07 0 .14 0 .21-.06l.2-.05a4.8 4.8 0 0 1 .53-.1c.24 0 .48-.11.72-.14a5.65 5.65 0 0 1 1.45 0c.24 0 .48.09.72.14a4.8 4.8 0 0 1 .53.1l.2.05c.07 0 .14 0 .21.06a6.92 6.92 0 0 1 .9.36 5.76 5.76 0 0 1 .94.53 5.59 5.59 0 0 1 .89.77 5.52 5.52 0 0 1 .77.9 5.79 5.79 0 0 1 .53.94 6.92 6.92 0 0 1 .36.9c0 .07 0 .14.06.21l.05.2a4.8 4.8 0 0 1 .1.53c0 .24.11.48.14.72a5.65 5.65 0 0 1 0 1.45c0 .24-.09.48-.14.72a4.8 4.8 0 0 1-.1.53l-.05.2c0 .07 0 .14-.06.21a6.92 6.92 0 0 1-.36.9 5.79 5.79 0 0 1-.53.94 5.52 5.52 0 0 1-.77.9 5.59 5.59 0 0 1-.89.77 5.76 5.76 0 0 1-.94.53 6.92 6.92 0 0 1-.9.36c-.07 0-.14 0-.21.06l-.2.05a4.8 4.8 0 0 1-.53.1c-.24 0-.48.11-.72.14a5.65 5.65 0 0 1-1.45 0c-.24 0-.48-.09-.72-.14a4.8 4.8 0 0 1-.53-.1l-.2-.05c-.07 0-.14 0-.21-.06a6.92 6.92 0 0 1-.9-.36 5.76 5.76 0 0 1-.94-.53 5.59 5.59 0 0 1-.89-.77 5.52 5.52 0 0 1-.77-.9 5.79 5.79 0 0 1-.53-.94 6.92 6.92 0 0 1-.36-.9c0-.07 0-.14-.06-.21l-.05-.2a4.8 4.8 0 0 1-.1-.53c0-.24-.11-.48-.14-.72a5.65 5.65 0 0 1 0-1.45zm11.63 1.11a3.94 3.94 0 0 0-3.25-2.83c-1.89-.24-3.48.65-3.84 2.07a3.17 3.17 0 0 0 1.63 3.62 3.42 3.42 0 0 0 3.36-.15 2.42 2.42 0 0 0 1.1-1.64.12.12 0 0 0-.12-.15h-.61a.14.14 0 0 0-.14.1 1.62 1.62 0 0 1-1.91 1.16 1.78 1.78 0 0 1-1.36-1.63c0-.07 0-.14 0-.21a.14.14 0 0 1 .14-.12h4.93a.14.14 0 0 0 .14-.14 4.38 4.38 0 0 0-.07-.08zm-4.8-.66a1.81 1.81 0 0 1 1.68-1.35 1.9 1.9 0 0 1 1.8 1.35.14.14 0 0 1-.14.18H12.5a.14.14 0 0 1-.13-.18z"/></svg></div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary"><i class="fas fa-code"></i> Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button close"></span>
+                                <span class="terminal-button minimize"></span>
+                                <span class="terminal-button maximize"></span>
+                            </div>
+                            <div class="terminal-title">kayke@developer:~</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">$ <span class="command">whoami</span></div>
+                            <div class="terminal-line">kayke-spoti</div>
+                            <div class="terminal-line">$ <span class="command">cat about.json</span></div>
+                            <div class="terminal-line">{</div>
+                            <div class="terminal-line indent">"name": "Kayke Spoti",</div>
+                            <div class="terminal-line indent">"role": "Desenvolvedor Full Stack",</div>
+                            <div class="terminal-line indent">"location": "Brasil",</div>
+                            <div class="terminal-line indent">"skills": ["JavaScript", "React", "Node.js", "MongoDB"]</div>
+                            <div class="terminal-line">}</div>
+                            <div class="terminal-line">$ <span class="command">./start-conversation.sh</span></div>
+                            <div class="terminal-line">Iniciando conversa... <span class="blink">█</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- About Section -->
+        <section class="section" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Olá! Meu nome é <span class="highlight">Kayke Miguel Dos Santos Spoti</span>, tenho 16 anos e sou um entusiasta da tecnologia. Desde cedo, sempre tive uma curiosidade natural por computadores e dispositivos eletrônicos, o que me levou a explorar o mundo da programação e do desenvolvimento web.</p>
+                        
+                        <p>Atualmente, estou focado em aprimorar minhas habilidades como <span class="highlight">desenvolvedor full stack</span>. Adoro criar interfaces intuitivas e visualmente atraentes, sempre buscando oferecer a melhor experiência possível aos usuários.</p>
+                        
+                        <p>Estou constantemente aprendendo novas tecnologias e tendências para me manter atualizado nesse campo em constante evolução. Meu objetivo é criar soluções digitais que não apenas funcionem bem, mas também proporcionem experiências memoráveis.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="terminal-button close"></span>
+                                    <span class="terminal-button minimize"></span>
+                                    <span class="terminal-button maximize"></span>
+                                </div>
+                                <div class="terminal-title">kayke@portfolio: ~/sobre</div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">$ <span class="typed-terminal">cat info.json</span></div>
+                                <div class="terminal-output">
+                                    {<br>
+                                    &nbsp;&nbsp;"nome": "Kayke Spoti",<br>
+                                    &nbsp;&nbsp;"idade": 16,<br>
+                                    &nbsp;&nbsp;"localização": "São Paulo, Brasil",<br>
+                                    &nbsp;&nbsp;"ocupação": "Desenvolvedor Full Stack",<br>
+                                    &nbsp;&nbsp;"interesses": [<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Desenvolvimento Web",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"UI/UX Design",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;"Novas Tecnologias"<br>
+                                    &nbsp;&nbsp;]<br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section class="section" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-intro">
+                        <p>Minha stack tecnológica inclui diversas ferramentas e linguagens que utilizo para criar aplicações web modernas e eficientes.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code"></i> Front-End</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">HTML5</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CSS3</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percentage">67%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 67%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React</span>
+                                        <span class="skill-percentage">10%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-server"></i> Back-End</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Node.js</span>
+                                        <span class="skill-percentage">4%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 4%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-percentage">30%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">SpringBoot</span>
+                                        <span class="skill-percentage">2%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 2%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">UI/UX</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Responsive Design</span>
+                                        <span class="skill-percentage">66%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 66%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3><i class="fas fa-tools"></i> Ferramentas & DevOps</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Git & GitHub</span>
+                                        <span class="skill-percentage">20%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">VS Code</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Chrome DevTools</span>
+                                        <span class="skill-percentage">40%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experiencia">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2 class="section-title">Experiência Profissional</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date"></div>
+                            <div class="timeline-content">
+                                <h3>Nenhuma experiencia de trabalho profissional ainda...</h3>
+                                <p class="timeline-company"></p>
+                                <p>Desenvolvimento de websites responsivos e aplicações web para clientes diversos, utilizando HTML, CSS, JavaScript e React.</p>
+                                <ul class="timeline-tasks">
+                                    <li>Criação de interfaces de usuário modernas e intuitivas</li>
+                                    <li>Implementação de designs responsivos para diferentes dispositivos</li>
+                                    <li>Otimização de performance e acessibilidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Experiencia Aba 2 , informações futuras-->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2025 - 2026</div>
+                            <div class="timeline-content">
+                                <h3></h3>
+                                <p class="timeline-company"></p>
+                                <p></p>
+                                <ul class="timeline-tasks">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="code-bracket">&lt;</span>
+                    <span class="logo-text">Kayke<span class="highlight">Spoti</span></span>
+                    <span class="code-bracket">/&gt;</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#sobre" class="footer-link">Sobre</a>
+                    <a href="#habilidades" class="footer-link">Habilidades</a>
+                    <a href="#experiencia" class="footer-link">Projetos</a>
+                    <a href="#projetos" class="footer-link">Galeria</a>
+                    <a href="#contato" class="footer-link">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/kayke-spoti"  aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/kayke-spoti"  aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/kayke.spoti"  aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Kayke Spoti. Todos os direitos reservados.</p>
+                <p class="footer-credits">Desenvolvido com <i class="fas fa-heart"></i> e <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- botao de scroll para o topo -->
+    <button id="scroll-top" class="scroll-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
